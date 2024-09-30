@@ -9,8 +9,21 @@ function convertir() {
     resultado = valor / 1000;
   } else if (unidadInicial === "metros" && unidadFinal === "centimetros") {
     resultado = valor * 100;
+  } else if (unidadInicial === "metros" && unidadFinal === "metros") {
+    resultado = valor;
+  } else if (unidadInicial === "kilometros" && unidadFinal === "metros") {
+    resultado = valor * 1000;
+  } else if (unidadInicial === "kilometros" && unidadFinal === "centimetros") {
+    resultado = valor * 100000;
+  } else if (unidadInicial === "kilometros" && unidadFinal === "kilometros") {
+    resultado = valor;
+  } else if (unidadInicial === "centimetros" && unidadFinal === "metros") {
+    resultado = valor / 100;
+  } else if (unidadInicial === "centimetros" && unidadFinal === "kilometros") {
+    resultado = valor / 100000;
+  } else if (unidadInicial === "centimetros" && unidadFinal === "centimetros") {
+    resultado = valor;
   }
-  // ... (agregar más casos)
 
   document.getElementById("resultado").textContent = valor + " " + unidadInicial + " son " + resultado + " " + unidadFinal;
 }
