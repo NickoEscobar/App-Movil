@@ -21,14 +21,6 @@
   </select>
   <button onclick="convertir()">Convertir</button>
   <p id="resultado"></p>
-   function mostrarHistorial() {
-            const listaHistorial = document.getElementById("listaHistorial");
-            listaHistorial.innerHTML = ""; // Limpiar historial actual
-            historial.forEach(item => {
-                const li = document.createElement("li");
-                li.textContent = `${item.valor} ${item.unidadInicial} = ${item.resultado} ${item.unidadFinal}`;
-                listaHistorial.appendChild(li);
-            });
 
   <script src="script.js"></script>
   <h4>Realizado por Nikol Gabriela Escobar</h4>
